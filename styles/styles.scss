@@ -1,0 +1,71 @@
+@import 'bootstrap/assets/stylesheets/bootstrap.scss';
+
+body {
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+.page-header {
+  text-align: center;
+}
+.create-new {
+  text-align: center;
+}
+
+.customers-list {
+  margin:20px auto;
+  .customer {
+    padding:15px;
+    margin-bottom:15px;
+    border:solid 1px black;
+    border-radius: 4px;
+  }
+  .title {
+    margin-bottom:20px;
+    .name {
+      text-align: center;
+      @media (min-width:480px){
+        text-align: left;
+        vertical-align: middle;
+        margin:0;
+      }
+    }
+    .btns {
+      float: none;
+      text-align: center;
+      margin-bottom: 20px;
+      @media (min-width:480px){
+        float:right;
+      }
+    }
+  }
+  .customer-details {
+    .info {
+      font-weight:bold;
+      display: inline-block;
+      margin-right:20px;
+      span {
+        font-weight:normal;
+      }
+    }
+  }
+}
+
+form {
+  .required{
+    &.active {
+      border:solid 1px #d9534f;
+    }
+  }
+}
+.address {
+  margin-top:15px;
+  h5 {
+    font-weight:bold;
+  }
+}
+.popup {
+  display: none;
+  width:100px;
+  height:100px;
+  background: red;
+}
